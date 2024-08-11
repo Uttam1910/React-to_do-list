@@ -109,14 +109,24 @@ button[type="submit"]:hover {
 }
 
 /* Responsive Design */
+
+/* iPad and similar devices (768px) */
 @media (max-width: 1024px) {
   .todo-item {
     width: 48%; /* 2 items per row on medium screens */
   }
 }
 
+/* Very small screens (mobile) */
 @media (max-width: 480px) {
   .todo-item {
     width: 100%; /* Stack items vertically on very small screens */
+  }
+}
+
+/* iPad (and similar devices) Specific Adjustments */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .todo-item {
+    width: 30%; /* 3 items per row on iPad */
   }
 }
