@@ -43,6 +43,9 @@ function App() {
 
   return (
     <div className="App">
+      <header className="app-header">
+        <h1>To-Do List</h1>
+      </header>
       <div className="todo-list">
         <form onSubmit={addTask}>
           <input
